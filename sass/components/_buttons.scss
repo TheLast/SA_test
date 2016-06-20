@@ -3,6 +3,7 @@
 ///Row to handle absolutely positioned buttons
 .button-row {
   min-height: $button-default-height;
+  margin-top: 20px;
 }
 
 .button-arrow-wrapper {
@@ -51,7 +52,7 @@
 ///Variants for back/forward
   &.direction-left {
     right: 100%;
-    margin-right: -120px;
+    margin-right: -125px;
 
     .button-arrow {
       background: $light-grey;

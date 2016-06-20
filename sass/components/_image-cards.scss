@@ -1,15 +1,15 @@
 //main: ../main.scss
 /// Image card slider component
 
-
 .image-card-container {
   overflow: hidden;
 
   .slide {
     float: left;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     transition: margin-left 1s;
-    @extend %clearfix;
 
     &.left {
       margin-left: -920px;
@@ -20,22 +20,22 @@
   }
 
   figure {
-    float: left;
     background: $light-grey;
-    max-width: 294px;
-    margin: 0 17px 0 0;
+    max-width: $image-max-width;
+    margin: 0;
 
     figcaption {
       padding: 10px;
-      min-height: 70px;
     }
 
     img {
-      max-width: 100%;
       display: block;
     }
     &:last-child {
       margin-right: 0;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
     }
   }
 

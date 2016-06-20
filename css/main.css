@@ -424,6 +424,10 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2 {
   color: #6600a1;
 }
@@ -451,7 +455,7 @@ h1 {
 /**
  *  Extends: additional clearfix placeholder for extending
  */
-.row:after, .image-card-container .slide:after {
+.row:after {
   display: block;
   clear: both;
   content: '';
@@ -517,6 +521,22 @@ h1 {
   display: none;
 }
 
+/**
+ * Table-like layout
+ */
+.display-table {
+  display: table;
+}
+
+.display-table .table-row {
+  display: table-row;
+}
+
+.display-table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .row {
   position: relative;
 }
@@ -567,7 +587,7 @@ h1 {
 }
 
 .topheader {
-  background: url(../images/glasses-header-bg.jpg) no-repeat right 50%;
+  background: url("../images/glasses-header-bg.jpg") no-repeat right 50%;
   background-size: 75%;
   padding: 20px 0;
 }
@@ -588,6 +608,7 @@ h1 {
 
 .button-row {
   min-height: 50px;
+  margin-top: 20px;
 }
 
 .button-arrow-wrapper {
@@ -637,7 +658,7 @@ h1 {
 
 .button-arrow-wrapper.direction-left {
   right: 100%;
-  margin-right: -120px;
+  margin-right: -125px;
 }
 
 .button-arrow-wrapper.direction-left .button-arrow {
@@ -668,6 +689,8 @@ h1 {
 
 .image-card-container .slide {
   float: left;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   transition: margin-left 1s;
 }
@@ -681,24 +704,25 @@ h1 {
 }
 
 .image-card-container figure {
-  float: left;
   background: #d4d4d4;
   max-width: 294px;
-  margin: 0 17px 0 0;
+  margin: 0;
 }
 
 .image-card-container figure figcaption {
   padding: 10px;
-  min-height: 70px;
 }
 
 .image-card-container figure img {
-  max-width: 100%;
   display: block;
 }
 
 .image-card-container figure:last-child {
   margin-right: 0;
+}
+
+.image-card-container figure input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 .steps ul {

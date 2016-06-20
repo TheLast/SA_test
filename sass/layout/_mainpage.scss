@@ -1,7 +1,7 @@
 //main: ../main.scss
 
 .topheader {
-  background: url(../images/glasses-header-bg.jpg) no-repeat right 50%;
+  background: url($base-url+'glasses-header-bg.jpg') no-repeat right 50%;
   background-size: 75%;
   padding: 20px 0;
 }
