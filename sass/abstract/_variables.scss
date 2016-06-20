@@ -1,0 +1,72 @@
+//main: ../main.scss
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Font sizes
+$fontsize-base: 1em;
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(32, 32, 32) !default;
+
+/// Main brand colors
+/// @type Color
+$brand-color-purple: rgb(102, 0, 161) !default;
+$brand-color-purple-light: rgb(153, 153, 204) !default;
+$brand-color-green: rgb(28, 166, 56) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(212, 212, 212) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 960px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../images/' !default;
+
+
+
+/// grid variables
+$grid-columns: 12;
+
+/// @Component Steps
+$step-number: 5;
+$step-height: 40px;
+
+/// @Component Buttons
+$button-arrow-size: 50px;
+
+/// @Component Image cards slider
+$slider-width: 920px;

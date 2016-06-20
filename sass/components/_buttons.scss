@@ -1,0 +1,65 @@
+//main: ../main.scss
+
+.button-arrow-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  line-height: $button-arrow-size;
+
+}
+
+.button-arrow {
+  width: $button-arrow-size;
+  height: $button-arrow-size;
+  position: relative;
+  float: right;
+  margin-left: 10px;
+
+  &:after, &:before {
+    left: 50%;
+    margin-left: -8px;
+  	top: 50%;
+  	border: solid transparent;
+  	content: "";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  }
+  &:after {
+  	border-color: rgba(136, 183, 213, 0);
+  	border-width: 14px;
+  	margin-top: -14px;
+  }
+  &:before {
+  	border-color: rgba(194, 225, 245, 0);
+  	border-left-color: #fff;
+  	border-width: 18px;
+  	margin-top: -18px;
+  }
+}
+
+.button-arrow-right {
+    background: $brand-color-purple;
+    &:after {
+  	  border-left-color: $brand-color-purple;
+    }
+
+}
+
+.button-arrow-left {
+  background: $light-grey;
+
+  &:after, &:before {
+    right: 50%;
+    margin-right: -8px;
+    left: auto;
+    border-left-color: transparent;
+  }
+  &:after {
+    border-right-color: $light-grey;
+
+  }
+  &:before {
+    border-right-color: #fff;
+  }
+}

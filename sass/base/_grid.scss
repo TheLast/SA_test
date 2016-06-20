@@ -1,0 +1,26 @@
+//main: ../main.scss
+
+/// Simple Grid
+
+.row {
+    @extend %clearfix;
+
+    [class*='column-'] {
+        float: left;
+        width: 100%;
+        min-height: 1px;
+    }
+
+
+    /// Column-generating loop
+    @include respond-to('small') {
+      @for $i from 1 through $grid-columns {
+
+          .column-#{$i} {
+              width: 100% / $grid-columns * $i;
+          }
+
+      }
+    }
+
+}

@@ -1,0 +1,21 @@
+// compileExpanded: ../css/main.css
+
+@import
+  "abstract/variables",
+  "abstract/mixins",
+  "abstract/functions";
+
+@import "vendor/normalize";
+
+@import
+  "base/base",
+  "base/typography",
+  "base/helpers",
+  "base/grid";
+
+@import "layout/mainpage";
+
+@import
+  "components/buttons",
+  "components/image-cards",
+  "components/steps";

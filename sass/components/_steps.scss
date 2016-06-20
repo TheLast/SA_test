@@ -1,0 +1,58 @@
+//main: ../main.scss
+
+/// Breadcrumb-like steps component
+.steps {
+  ul {
+    list-style: none;
+    display: inline-table;
+    width: 100%;
+    padding: 0;
+
+    li {
+      display: block;
+      float: left;
+      position: relative;
+      width: 100%/$step-number;
+      height: $step-height;
+      line-height: $step-height;
+      margin: 0;
+      font-size: $fontsize-base*1.25;
+      text-decoration: none;
+      text-align: center;
+      background: $brand-color-purple-light;
+      color: #fff;
+      border-right: 4px solid #fff;
+
+      &::after {
+        content: "";
+				border-top: 20px solid transparent;
+	 			border-bottom: 20px solid transparent;
+	  		border-left: 10px solid $brand-color-purple-light;
+				position: absolute; right: -10px; top: 0;
+				z-index: 1;
+      }
+      &::before {
+        content: "";
+				border-top: 20px solid transparent;
+	  		border-bottom: 20px solid transparent;
+	  		border-left: 10px solid #fff;
+				position: absolute; left: 0; top: 0;
+      }
+      &:first-child::before {
+        display: none;
+      }
+      &:last-child {
+        margin-right: 0;
+        border-right: none;
+      }
+      &:last-child::after {
+        display: none;
+      }
+
+    }
+
+    .step-current {
+      background: $brand-color-purple;
+    }
+  }
+}
