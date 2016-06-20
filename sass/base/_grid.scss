@@ -4,6 +4,7 @@
 
 .row {
     @extend %clearfix;
+    position: relative;
 
     [class*='column-'] {
         float: left;

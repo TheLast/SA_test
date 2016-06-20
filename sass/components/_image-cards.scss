@@ -8,7 +8,7 @@
   .slide {
     float: left;
     width: 100%;
-    transition: margin-left 1.5s;
+    transition: margin-left 1s;
     @extend %clearfix;
 
     &.left {

@@ -511,6 +511,10 @@ h1 {
   display: none;
 }
 
+.row {
+  position: relative;
+}
+
 .row [class*='column-'] {
   float: left;
   width: 100%;
@@ -580,17 +584,21 @@ h1 {
   display: inline-block;
   cursor: pointer;
   line-height: 50px;
+  position: absolute;
+  right: 0;
+  transition: 1s all;
 }
 
-.button-arrow {
+.button-arrow-wrapper .button-arrow {
   width: 50px;
   height: 50px;
+  background: #6600a1;
   position: relative;
   float: right;
   margin-left: 10px;
 }
 
-.button-arrow:after, .button-arrow:before {
+.button-arrow-wrapper .button-arrow:after, .button-arrow-wrapper .button-arrow:before {
   left: 50%;
   margin-left: -8px;
   top: 50%;
@@ -602,43 +610,43 @@ h1 {
   pointer-events: none;
 }
 
-.button-arrow:after {
+.button-arrow-wrapper .button-arrow:after {
   border-color: rgba(136, 183, 213, 0);
+  border-left-color: #6600a1;
   border-width: 14px;
   margin-top: -14px;
 }
 
-.button-arrow:before {
+.button-arrow-wrapper .button-arrow:before {
   border-color: rgba(194, 225, 245, 0);
   border-left-color: #fff;
   border-width: 18px;
   margin-top: -18px;
 }
 
-.button-arrow-right {
-  background: #6600a1;
+.button-arrow-wrapper.direction-left {
+  left: 0;
 }
 
-.button-arrow-right:after {
-  border-left-color: #6600a1;
-}
-
-.button-arrow-left {
+.button-arrow-wrapper.direction-left .button-arrow {
   background: #d4d4d4;
+  float: left;
+  margin-left: 0;
+  margin-right: 10px;
 }
 
-.button-arrow-left:after, .button-arrow-left:before {
+.button-arrow-wrapper.direction-left .button-arrow:after, .button-arrow-wrapper.direction-left .button-arrow:before {
   right: 50%;
   margin-right: -8px;
   left: auto;
   border-left-color: transparent;
 }
 
-.button-arrow-left:after {
+.button-arrow-wrapper.direction-left .button-arrow:after {
   border-right-color: #d4d4d4;
 }
 
-.button-arrow-left:before {
+.button-arrow-wrapper.direction-left .button-arrow:before {
   border-right-color: #fff;
 }
 
@@ -649,7 +657,7 @@ h1 {
 .image-card-container .slide {
   float: left;
   width: 100%;
-  transition: margin-left 1.5s;
+  transition: margin-left 1s;
 }
 
 .image-card-container .slide.left {

@@ -1,11 +1,8 @@
-var buttonArrow = document.getElementById('button-press'),
-    buttonBox = buttonArrow.querySelectorAll('.button-arrow');
+var buttonArrow = document.getElementById('button-press');
 
 var slide1 = document.getElementById('slide-1'),
     slide2= document.getElementById('slide-2');
 var defaultState = true;
-var slideDelay = 1300;
-
 
 
 buttonArrow.onclick = function() {
@@ -26,17 +23,12 @@ function slideMove(defaultDir, callback) {
   callback;
 };
 
-function changeState(button, state) {
-  console.log(button, state, buttonBox);
+function changeState(buttonWrapper, state) {
 
-  if (!state) {
-    addClass(buttonBox[0], "button-arrow-left");
-    removeClass(buttonBox[0], "button-arrow-right");
-
+  if (state) {
+    addClass(buttonWrapper, 'direction-left');
   } else {
-
-    removeClass(buttonBox[0], "button-arrow-left");
-    addClass(buttonBox[0], "button-arrow-right");
+    removeClass(buttonWrapper, 'direction-left');
   }
 };
 
