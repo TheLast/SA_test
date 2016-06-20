@@ -66,7 +66,8 @@ $step-number: 5;
 $step-height: 40px;
 
 /// @Component Buttons
-$button-arrow-height: 50px;
+$button-default-height: 50px;
+$button-arrow-height: $button-default-height;
 $button-arrow-width: 125px;
 
 /// @Component Image cards slider

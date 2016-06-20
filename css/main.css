@@ -433,6 +433,12 @@ h1 {
   font-size: 3em;
 }
 
+.header-purple {
+  padding: 15px;
+  color: #fff;
+  background: #6600a1;
+}
+
 /**
  * Clear inner floats
  */
@@ -580,6 +586,10 @@ h1 {
   font-size: 1.25em;
 }
 
+.button-row {
+  min-height: 50px;
+}
+
 .button-arrow-wrapper {
   display: inline-block;
   cursor: pointer;
@@ -672,11 +682,19 @@ h1 {
 
 .image-card-container figure {
   float: left;
-  margin: 0 15px 0 0;
+  background: #d4d4d4;
+  max-width: 294px;
+  margin: 0 17px 0 0;
+}
+
+.image-card-container figure figcaption {
+  padding: 10px;
+  min-height: 70px;
 }
 
 .image-card-container figure img {
   max-width: 100%;
+  display: block;
 }
 
 .image-card-container figure:last-child {

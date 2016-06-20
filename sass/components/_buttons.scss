@@ -1,5 +1,10 @@
 //main: ../main.scss
 
+///Row to handle absolutely positioned buttons
+.button-row {
+  min-height: $button-default-height;
+}
+
 .button-arrow-wrapper {
   display: inline-block;
   cursor: pointer;
