@@ -3,15 +3,16 @@
 .button-arrow-wrapper {
   display: inline-block;
   cursor: pointer;
-  line-height: $button-arrow-size;
+  width: $button-arrow-width;
+  line-height: $button-arrow-height;
   position: absolute;
   right: 0;
   transition: 1s all;
 
 ///Standard arrow box button
   .button-arrow {
-    width: $button-arrow-size;
-    height: $button-arrow-size;
+    width: $button-arrow-height;
+    height: $button-arrow-height;
     background: $brand-color-purple;
     position: relative;
     float: right;
@@ -44,7 +45,8 @@
 
 ///Variants for back/forward
   &.direction-left {
-    left: 0;
+    right: 100%;
+    margin-right: -120px;
 
     .button-arrow {
       background: $light-grey;

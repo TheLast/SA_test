@@ -583,6 +583,7 @@ h1 {
 .button-arrow-wrapper {
   display: inline-block;
   cursor: pointer;
+  width: 125px;
   line-height: 50px;
   position: absolute;
   right: 0;
@@ -625,7 +626,8 @@ h1 {
 }
 
 .button-arrow-wrapper.direction-left {
-  left: 0;
+  right: 100%;
+  margin-right: -120px;
 }
 
 .button-arrow-wrapper.direction-left .button-arrow {

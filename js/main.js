@@ -1,13 +1,17 @@
 var buttonArrow = document.getElementById('button-press');
 
 var slide1 = document.getElementById('slide-1'),
-    slide2= document.getElementById('slide-2');
+    slide2= document.getElementById('slide-2'),
+    buttonText = document.getElementById('button-text');
+
+let textForward = 'WEITER',
+    textBack    = 'ZURUCK';
+
 var defaultState = true;
 
 
 buttonArrow.onclick = function() {
     slideMove(defaultState, changeState(this, defaultState));
-
 };
 
 
@@ -27,8 +31,10 @@ function changeState(buttonWrapper, state) {
 
   if (state) {
     addClass(buttonWrapper, 'direction-left');
+    buttonText.innerHTML = textBack;
   } else {
     removeClass(buttonWrapper, 'direction-left');
+    buttonText.innerHTML = textForward;
   }
 };
 
