@@ -1,5 +1,45 @@
 //main: ../main.scss
 
 .product-wrapper {
+  border: 1px solid $light-grey;
+  padding: 10px;
+  margin-bottom: 10px;
 
+  [class*='column-'] {
+    padding: 0 10px;
+  }
+
+  .product-description {
+
+    h4 {
+      margin: 10px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $light-grey;
+      font-size: $fontsize-base*1.25;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  .product-cta {
+    margin-top: 20px;
+
+    p {
+      margin: 0;
+    }
+    .price-box {
+      border: 1px solid $light-grey;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .price {
+      font-size: $fontsize-base*1.25;
+      color: $brand-color-purple;
+      font-weight: bold;
+    }
+  }
 }

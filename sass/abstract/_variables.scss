@@ -21,6 +21,7 @@ $text-color: rgb(32, 32, 32) !default;
 $brand-color-purple: rgb(102, 0, 161) !default;
 $brand-color-purple-light: rgb(153, 153, 204) !default;
 $brand-color-green: rgb(28, 166, 56) !default;
+$brand-color-green-dark: rgb(44, 122, 0) !default;
 
 /// Light grey
 /// @type Color
@@ -58,7 +59,7 @@ $base-url: '../images/' !default;
 
 
 
-/// grid variables
+/// Grid variables
 $grid-columns: 12;
 
 /// @Component Steps
@@ -73,3 +74,6 @@ $button-arrow-width: 125px;
 /// @Component Image cards slider
 $slider-width: 920px;
 $image-max-width: 294px;
+
+/// @Component Checkboxes
+$checkbox-width: 20px;

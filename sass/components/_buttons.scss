@@ -6,6 +6,7 @@
   margin-top: 20px;
 }
 
+/// Arrow button alternative
 .button-arrow-wrapper {
   display: inline-block;
   cursor: pointer;
@@ -15,7 +16,7 @@
   right: 0;
   transition: 1s all;
 
-///Standard arrow box button
+/// ALT Arrow box button
   .button-arrow {
     width: $button-arrow-height;
     height: $button-arrow-height;
@@ -49,7 +50,7 @@
     }
   }
 
-///Variants for back/forward
+/// Variants for back/forward
   &.direction-left {
     right: 100%;
     margin-right: -125px;
@@ -74,5 +75,35 @@
         border-right-color: #fff;
       }
     }
+  }
+}
+
+
+/// Standard buttons
+.button {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+/// CTA button variant
+.button-cta {
+  @include button-variant(#fff, $brand-color-green, #fff);
+  font-weight: 700;
+}
+
+/// Bottom arrow helper classes
+.arrow-bottom {
+  display: inline-block;
+  top: 3px;
+  left: 6px;
+  width: 7px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: solid $brand-color-purple;
+  border-width: 0 2px 2px 0;
+
+  .show & {
+      transform: rotate(-45deg);
   }
 }

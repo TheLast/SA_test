@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Test task 1</title>
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 
@@ -147,20 +147,75 @@
 
         <ul>
           <li>
-            <input type="checkbox" id="checkbox-product-1">
-            <label for="checkbox-product-1">Lorem ipsum</label>
+            <label class="control control--checkbox">
+              First checkbox
+          		<input type="checkbox" checked="checked"/>
+          		<div class="control__indicator"></div>
+          	</label>
           </li>
           <li>
-            <input type="checkbox" id="checkbox-product-2">
-            <label for="checkbox-product-2">Lorem ipsum</label>
+            <label class="control control--checkbox">
+              Second checkbox
+          		<input type="checkbox" checked="checked"/>
+          		<div class="control__indicator"></div>
+          	</label>
+          </li>
+          <li>
+            <label class="control control--checkbox">Disabled
+              <input type="checkbox" disabled="disabled"/>
+              <div class="control__indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="control control--checkbox">Disabled & checked
+              <input type="checkbox" disabled="disabled" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
           </li>
         </ul>
+
+        <p class="accordion-toggle" data-target="funchal-info-1">
+          mehr Attribute anzeigen
+          <span class="arrow-bottom"></span>
+        </p>
+        <ul class="hidden" id="funchal-info-1">
+          <li>
+            <label class="control control--checkbox">
+              First checkbox
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="control control--checkbox">
+              Second checkbox
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="control control--checkbox">Disabled
+              <input type="checkbox" disabled="disabled"/>
+              <div class="control__indicator"></div>
+            </label>
+          </li>
+          <li>
+            <label class="control control--checkbox">Disabled & checked
+              <input type="checkbox" disabled="disabled" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </li>
+        </ul>
+
       </div>
       <div class="column-4 product-cta">
-        <div class="price-box">
-          33$
+        <div class="price-box text-center">
+          <p class="text-gray-dark">Rahmen inkl. Glaser & Service</p>
+          <p class="price">ab 39,90 €</p>
         </div>
-        <button>BUY</button>
+        <div class="button-row">
+          <div class="button button-cta">Zum Produkt</button>
+        </div>
       </div>
     </div>
 
