@@ -21,6 +21,8 @@ but just an example of how that can be used, modified and enhanced for this and 
    - Import partial CSS with updated styles
    - Premade theme selectors, like .theme-dark { <some styles> }
 
+5. Code can be viewed on GITHUB if needed
+
 
 Areas of improvement (or what else would I do if it were a real project)
 
