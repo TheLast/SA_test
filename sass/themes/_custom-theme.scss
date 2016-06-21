@@ -1,0 +1,12 @@
+// compileExpanded: ../css/custom-theme.css
+/// Custom theme
+
+/// Main brand colors
+/// @type Color
+
+  $brand-color-purple: lighten(rgb(102, 0, 161), 30%);
+  $brand-color-purple-light: lighten(rgb(153, 153, 204), 10%);
+  $brand-color-green: lighten(rgb(28, 166, 56), 30%);
+  $brand-color-green-dark: lighten(rgb(44, 122, 0), 30%);
+
+@import "../main.scss";

@@ -415,7 +415,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: #6600a1;
+  color: #b73bff;
   text-decoration: none;
 }
 
@@ -429,7 +429,7 @@ img {
 }
 
 h1, h2 {
-  color: #6600a1;
+  color: #b73bff;
 }
 
 h1 {
@@ -446,7 +446,7 @@ h1 {
 .header-purple {
   padding: 15px;
   color: #fff;
-  background: #6600a1;
+  background: #b73bff;
 }
 
 /**
@@ -630,7 +630,7 @@ h1 {
 .button-arrow-wrapper .button-arrow {
   width: 50px;
   height: 50px;
-  background: #6600a1;
+  background: #b73bff;
   position: relative;
   float: right;
   margin-left: 10px;
@@ -650,7 +650,7 @@ h1 {
 
 .button-arrow-wrapper .button-arrow:after {
   border-color: rgba(136, 183, 213, 0);
-  border-left-color: #6600a1;
+  border-left-color: #b73bff;
   border-width: 14px;
   margin-top: -14px;
 }
@@ -695,7 +695,7 @@ h1 {
 
 .button-cta {
   color: #fff;
-  background-color: #1ca638;
+  background-color: #74e78b;
   border-color: #fff;
   text-align: center;
   padding: 10px;
@@ -704,13 +704,13 @@ h1 {
 
 .button-cta:focus, .button-cta.focus {
   color: #fff;
-  background-color: #157a29;
+  background-color: #48e067;
   border-color: #bfbfbf;
 }
 
 .button-cta:hover {
   color: #fff;
-  background-color: #157a29;
+  background-color: #48e067;
   border-color: #e0e0e0;
 }
 
@@ -721,7 +721,7 @@ h1 {
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  border: solid #6600a1;
+  border: solid #b73bff;
   border-width: 0 2px 2px 0;
 }
 
@@ -769,11 +769,11 @@ h1 {
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label {
-  background-color: #9999cc;
+  background-color: #bbbbdd;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-  border-color: #9999cc;
+  border-color: #bbbbdd;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -782,7 +782,7 @@ h1 {
 
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
   right: 0px;
-  background-color: #6600a1;
+  background-color: #b73bff;
   box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -861,7 +861,7 @@ h1 {
   font-size: 1.25em;
   text-decoration: none;
   text-align: center;
-  background: #9999cc;
+  background: #bbbbdd;
   color: #fff;
   border-right: 4px solid #fff;
 }
@@ -870,7 +870,7 @@ h1 {
   content: "";
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 10px solid #9999cc;
+  border-left: 10px solid #bbbbdd;
   position: absolute;
   right: -10px;
   top: 0;
@@ -901,7 +901,7 @@ h1 {
 }
 
 .steps ul .step-current {
-  background: #6600a1;
+  background: #b73bff;
 }
 
 .product-wrapper {
@@ -942,7 +942,7 @@ h1 {
 
 .product-wrapper .product-cta .price {
   font-size: 1.25em;
-  color: #6600a1;
+  color: #b73bff;
   font-weight: bold;
 }
 
@@ -977,12 +977,12 @@ h1 {
 }
 
 .control input:checked ~ .control__indicator {
-  background: #1ca638;
+  background: #74e78b;
 }
 
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-  background: #2c7a00;
+  background: #69ff14;
 }
 
 .control input:disabled ~ .control__indicator {

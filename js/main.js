@@ -2,8 +2,10 @@
 // Slider variables
 let buttonArrow = document.getElementById('button-press');
 
+let sliderWrapper = document.getElementsByClassName('image-card-container')[0];
 let slide1 = document.getElementById('slide-1');
 let slide2= document.getElementById('slide-2');
+
 let buttonText = document.getElementById('button-text');
 
 let textForward = 'WEITER';
@@ -15,10 +17,22 @@ let defaultState = true;
 let toggleButtons = document.getElementsByClassName('accordion-toggle');
 let i;
 
+// Switch button variables
+let buttonSwitch = document.getElementById('myonoffswitch');
+let body = document.getElementsByTagName('body')[0];
+
+//Sytle variables
+let styleId = document.getElementById('styleId');
+
 // Slider events
 buttonArrow.onclick = function() {
     slideMove(defaultState, changeState(this, defaultState));
+
+    updateHeight();
 };
+
+// Resize events
+window.addEventListener("resize", function(){ updateHeight(); }, true);
 
 // Accordion events
 for (i = 0; i<toggleButtons.length; i++) {
@@ -28,7 +42,25 @@ for (i = 0; i<toggleButtons.length; i++) {
   }
 }
 
-// Helper functions
+// Switch styles button events
+buttonSwitch.onclick = function() {
+  if (!this.checked) {
+    styleId.href='css/custom-theme.css';
+  } else {
+    styleId.href='css/main.css';
+  }
+
+};
+
+
+/// Helper functions
+
+// Update dynamic height of image container
+function updateHeight() {
+  sliderWrapper.style.height = (defaultState ? slide1.clientHeight : slide2.clientHeight)+'px';
+}
+
+// Push slider left/right by setting/removing className
 function slideMove(defaultDir, callback) {
   if (defaultDir) {
     addClass(slide1, 'left');
@@ -41,6 +73,7 @@ function slideMove(defaultDir, callback) {
   callback;
 };
 
+// Change state of the buttom - left/right
 function changeState(buttonWrapper, state) {
 
   if (state) {

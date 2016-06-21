@@ -5,7 +5,10 @@ h1, h2 {
 }
 h1 {
   text-transform: uppercase;
-  font-size: $fontsize-base*3;
+  font-size: $fontsize-base*2;
+  @include respond-to('small') {
+    font-size: $fontsize-base*3;
+  }
 }
 
 .header-purple {
