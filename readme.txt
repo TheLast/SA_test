@@ -18,7 +18,7 @@ but just an example of how that can be used, modified and enhanced for this and 
    - Creating a map of variables, a mixing and a loop in SASS, so the outputted CSS will something like
      .theme-dark .button { background: #000; } .theme-light .button { background: #ccc }
      Then toggling CSS class on body/wrapper
-   - Import partial css with updated styles
+   - Import partial CSS with updated styles
    - Premade theme selectors, like .theme-dark { <some styles> }
 
 
