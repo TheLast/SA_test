@@ -11,8 +11,9 @@ over another.
 but just an example of how that can be used, modified and enhanced for this and other project.
 
 4. There are few ways for toggling the styles, I chose the show the 'theme' way.
-   Inside a particular theme .scss file I'm modifying the variables at the beginning and importing the other styles.
-   This is OK for premade changes, however for small client-side toggling other option might be preferable
+   Inside a particular theme .SCSS file I'm modifying the variables at the beginning and importing the other styles.
+   This is OK for premade changes like different versions of pages or even A/B tests,
+   however for small client-side toggling other option might be preferable
 
    Other options are:
    - Creating a map of variables, a mixing and a loop in SASS, so the outputted CSS will something like
