@@ -82,28 +82,29 @@
 /// Standard buttons
 .button {
   cursor: pointer;
-  text-align: center;
-  padding: 10px;
 }
 
 /// CTA button variant
 .button-cta {
   @include button-variant(#fff, $brand-color-green, #fff);
+  text-align: center;
+  padding: 10px;
   font-weight: 700;
 }
 
 /// Bottom arrow helper classes
 .arrow-bottom {
   display: inline-block;
-  top: 3px;
-  left: 6px;
-  width: 7px;
+  position: relative;
+  margin-left: 5px;
+  width: 10px;
   height: 10px;
   transform: rotate(45deg);
   border: solid $brand-color-purple;
   border-width: 0 2px 2px 0;
 
   .show & {
-      transform: rotate(-45deg);
+      transform: rotate(-135deg);
+      top: 3px;
   }
 }

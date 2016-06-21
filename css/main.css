@@ -685,14 +685,14 @@ h1 {
 
 .button {
   cursor: pointer;
-  text-align: center;
-  padding: 10px;
 }
 
 .button-cta {
   color: #fff;
   background-color: #1ca638;
   border-color: #fff;
+  text-align: center;
+  padding: 10px;
   font-weight: 700;
 }
 
@@ -710,9 +710,9 @@ h1 {
 
 .arrow-bottom {
   display: inline-block;
-  top: 3px;
-  left: 6px;
-  width: 7px;
+  position: relative;
+  margin-left: 5px;
+  width: 10px;
   height: 10px;
   transform: rotate(45deg);
   border: solid #6600a1;
@@ -720,7 +720,8 @@ h1 {
 }
 
 .show .arrow-bottom {
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
+  top: 3px;
 }
 
 .image-card-container {
